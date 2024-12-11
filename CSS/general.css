@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Freehand&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-style-header1-mobile: bold 28px 'Cinzel Decorative', serif;
+    --font-style-header2-mobile: normal 20px 'Cinzel Decorative', serif;
+    --font-style-header3-mobile: normal 16px 'Cinzel Decorative', serif;
+    --font-style-body-mobile: normal 14px 'Libre Franklin', sans-serif;
+
+    --font-style-header1-tablet: bold 36px 'Cinzel Decorative', serif;
+    --font-style-header2-tablet: normal 28px 'Cinzel Decorative', serif;
+    --font-style-header3-tablet: normal 20px 'Cinzel Decorative', serif;
+    --font-style-body-tablet: normal 16px 'Libre Franklin', sans-serif;
+
+    --font-style-header1-desktop: bold 48px 'Cinzel Decorative', serif;
+    --font-style-header2-desktop: normal 40px 'Cinzel Decorative', serif;
+    --font-style-header3-desktop: normal 28px 'Cinzel Decorative', serif;
+    --font-style-body-desktop: normal 20px 'Libre Franklin', sans-serif;
+
+    --font-style-freehand-big-mobile: normal 190px 'Freehand', serif;
+    --font-style-freehand-medium-mobile: normal 175px 'Freehand', serif;
+    --font-style-freehand-small-mobile: normal 150px 'Freehand', serif;
+
+    --font-style-freehand-big-desktop: normal 250px 'Freehand', serif;
+    --font-style-freehand-medium-desktop: normal 245px 'Freehand', serif;
+    --font-style-freehand-small-desktop: normal 210px 'Freehand', serif;
+
+    --color-darkRed: #5B0200;
+    --color-gold: #D4AF37;
+    --color-warmBeige: #EDE6D1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('../PHOTOS/Background.png');
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    padding-bottom: 30px;
+}
+
+h1 {font: var(--font-style-header1-mobile);}
+h2 {font: var(--font-style-header2-mobile);}
+h3 {font: var(--font-style-header3-mobile);}
+p {font: var(--font-style-body-mobile);}
+
+.story-big {
+    font: var(--font-style-freehand-big-mobile);
+    opacity: 0.4;
+}
+
+.story-medium {
+    font: var(--font-style-freehand-medium-mobile);
+    opacity: 0.4;
+}
+
+.story-small {
+    font: var(--font-style-freehand-small-mobile);
+    opacity: 0.4;
+}
+
+.divider-big {
+    display: none;
+}
+
+.divider {
+    margin-top: 45px;
+    margin-bottom: 10px;
+    width: 176px;
+    height: auto;
+}
+
+.footer-divider-big {
+    display: none;
+}
+
+.footer-divider {
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section h1 {
+    color: var(--color-warmBeige);
+    margin-bottom: 20px;
+}
+
+.footer-section a {
+    font: var(--font-style-header3-mobile);
+    color: var(--color-warmBeige);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section a.active-link-footer {
+    color: var(--color-gold);
+    text-decoration: underline;
+}
+
+@media (min-width: 760px) {
+    h1 {font: var(--font-style-header1-tablet);}
+    h2 {font: var(--font-style-header2-tablet);}
+    h3 {font: var(--font-style-header3-tablet);}
+    p { font: var(--font-style-body-tablet);}
+
+    body{
+        padding-bottom: 50px;
+    }
+
+    .divider {
+        margin-top: 65px;
+    }
+
+    .footer-divider {
+        margin-top: 90px;
+        margin-bottom: 50px;
+    }
+
+    .footer-section a {
+        font: var(--font-style-header3-tablet);
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {font: var(--font-style-header1-desktop);}
+    h2 {font: var(--font-style-header2-desktop);}
+    h3 {font: var(--font-style-header3-desktop);}
+    p { font: var(--font-style-body-desktop);}
+
+    body {
+        padding-bottom: 120px;
+    }
+
+    .story-big {
+        font: var(--font-style-freehand-big-desktop);
+        opacity: 0.4;
+    }
+    
+    .story-medium {
+        font: var(--font-style-freehand-medium-desktop);
+        opacity: 0.4;
+    }
+    
+    .story-small {
+        font: var(--font-style-freehand-small-desktop);
+        opacity: 0.4;
+    }
+
+    .divider-big {
+        display: block;
+        margin-top: 120px;
+        margin-bottom: 35px;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .footer-divider {
+        display: none;
+    }
+
+    .footer-divider-big {
+        display: block;
+        margin-top: 120px;
+        margin-bottom: 80px;
+    }
+
+    .footer-section a {
+        font: var(--font-style-header3-desktop);
+        margin-bottom: 20px;
+    }
+}

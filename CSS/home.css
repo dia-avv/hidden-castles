@@ -1,0 +1,341 @@
+@import url(../CSS/general.css);
+@import url(../CSS/menu.css);
+@import url(../CSS/reviews-form.css);
+
+/* --- Top Banner --- */
+.banner {
+    display: none;
+}
+
+.banner.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.main-photo {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 60% 30%;
+    filter: brightness(65%);
+}
+
+.text-container {
+    position: absolute;
+    top: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.text-container h1{
+    position: absolute;
+    color: var(--color-warmBeige);
+}
+
+.top-divider {
+    margin-top: 30px;
+    position: absolute;
+    width: 363px;
+    height: 38px;
+}
+
+.text-container p {
+    color: var(--color-warmBeige);
+    margin: 70px 54px 0 54px;
+    max-width: 495px;
+}
+
+.read-more {
+    background-color: var(--color-gold);
+    color: var(--color-darkRed);
+    padding: 3px 24px;
+    font: var(--font-style-header3-mobile);
+    font-weight: 700;
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.25);
+    border: 0;
+    margin: 13px 0;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: var(--color-warmBeige);
+}
+
+#prev1, #prev2, #prev3 {
+    position: absolute;
+    left: 10px;
+    background: none;
+}
+  
+#next1, #next2, #next3 {
+    position: absolute;
+    right: 10px;
+    background: none;
+}
+
+.buttons-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    bottom: 5%;
+}
+
+.castle-button {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.castle-button img {
+    width: 174px;
+    max-width: 269px;
+    height: 107px;
+    max-height: 217px;
+}
+
+.castle-button h3 {
+    color: var(--color-warmBeige);
+    z-index: 1;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+/* --- Top Banner End --- */
+
+/* --- Reviews Section --- */
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews h1 {
+    margin-bottom: 20px;
+    color: var(--color-warmBeige);
+}
+
+.reviews h1, p, h3{
+    color: var(--color-warmBeige);
+}
+
+.review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.review img {
+    width: 135px;
+    height: 191px;
+    object-fit: cover;
+    border: 2px solid var(--color-gold);
+}
+
+.review p {
+    margin-bottom: 10px;
+    width: 180px;
+}
+
+#reviews-container {
+    margin-bottom: 20px;
+}
+
+.reviews button {
+    background-color: var(--color-gold);
+    color: var(--color-darkRed);
+    padding: 3px 24px;
+    font: var(--font-style-header3-mobile);
+    font-weight: 700;
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.25);
+    border: 0;
+    transition: background-color 0.3s ease;
+}
+
+.reviews button:hover {
+    background-color: var(--color-warmBeige);
+}
+/* --- Reviews Section End --- */
+
+/* --- Visiting Hours Section --- */
+.visiting-hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.visiting-hours h1, h2 {
+    color: var(--color-warmBeige);
+}
+
+.visit-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 809px;
+}
+
+.visit-container img {
+    width: 135px;
+    height: 226px;
+    object-fit: cover;
+    border: 2px solid var(--color-gold);
+}
+
+.visit-container p {
+    margin-top: 18px;
+}
+
+.foisor-text {
+    text-align: right;
+}
+/* --- Visiting Hours Section End --- */
+
+/* --- Already Visited Section --- */
+.already {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.already h1 {
+    color: var(--color-warmBeige);
+    margin-bottom: 10px;
+}
+
+.already button {
+    background-color: var(--color-gold);
+    color: var(--color-darkRed);
+    padding: 3px 24px;
+    font: var(--font-style-header3-mobile);
+    font-weight: 700;
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.25);
+    border: 0;
+    transition: background-color 0.3s ease;
+    width: 250px;
+}
+
+.already button:hover {
+    background-color: var(--color-warmBeige);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+/* --- Already Visited Section End --- */
+
+/* --- Responsive Wider Screens --- */
+@media (min-width: 760px) {
+    .castle-button img {
+        width: 269px;
+        height: 180px;
+        object-fit: cover;
+    }
+    
+    .text-container {
+        top: 40%;
+    }
+
+    .text-container p {
+        margin-top: 80px;
+    }
+
+    .top-divider {
+        margin-top: 40px;
+    }
+
+    .reviews h1 {
+        margin-bottom: 25px;
+    }
+
+    .review p {
+        width: 300px;
+    }
+
+    .review img {
+        min-width: 393px;
+        min-height: 239px;
+    }
+
+    .visit-container img {
+        width: 393px;
+        height: 464px;
+    }
+
+    .castel-stirbey {
+        width: 393px;
+        height: 464px;
+    }
+
+    .already h1 {
+        margin-bottom: 25px;
+    }
+
+    .already button {
+        width: 335px;
+    }
+} 
+
+@media (min-width: 1024px) {
+    .read-more {
+        font: var(--font-style-header3-desktop);
+        font-weight: 700;
+    }
+
+    .text-container {
+        top: 45%;
+    }
+
+    .text-container p{
+        margin-top: 100px;
+    }
+
+    .top-divider {
+        margin: 60px 0;
+    }
+
+    .reviews h1 {
+        margin-bottom: 35px;
+    }
+
+    .review p {
+        width: 594px;
+    }
+
+    .reviews button {
+        font: var(--font-style-header3-desktop);
+        font-weight: 700;
+    }
+
+    .already button {
+        font: var(--font-style-header3-desktop);
+        font-weight: 700;
+        width: 450px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        gap: 70px;
+    }
+}

@@ -1,0 +1,133 @@
+@import url('../CSS/general.css');
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    padding: 30px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    font: var(--font-style-header3-mobile);
+    color: var(--color-warmBeige);
+    text-decoration: none;
+}
+
+.language-selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font: var(--font-style-body-mobile);
+    color: var(--color-warmBeige);
+}
+
+.language-selector select {
+    background-color: var(--color-warmBeige);
+}
+
+.language-selector option {
+    font: var(--font-style-body-mobile);
+    color: var(--color-darkRed);
+}
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-gold);
+    margin: 4px 0;
+}
+
+.navigation ul {
+    display: none;
+}
+
+.navigation ul.active {
+    display: flex;
+    overflow-y: auto;
+    position: absolute;
+    flex-direction: column;
+    list-style: none;
+    width: 50vw;
+    height: 100vh;
+    -webkit-overflow-scrolling: touch;
+    top: 100px;
+    right: 0;
+    padding: 0 30px;
+    background-color: var(--color-warmBeige);
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+.navigation ul li a.active-link {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.navigation ul.active li {
+    margin: 16px 0;
+    text-align: left;
+}
+
+.navigation ul li a{
+    color: var(--color-darkRed);
+    text-decoration: none;
+    font: var(--font-style-header3-mobile);
+}
+
+.navigation ul li a:hover {
+    text-decoration: underline;
+}
+
+.navigation ul.active li ul.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    list-style: square;
+}
+
+.navigation ul.active li ul.dropdown-content li::marker {
+    color: var(--color-gold);
+}
+
+.navigation ul.active li ul.dropdown-content li {
+    margin: 8px 0;
+}
+
+.navigation ul.active li ul.dropdown-content li a {
+    color: var(--color-darkRed);
+    font: var(--font-style-body-mobile);
+    text-decoration: none;
+    text-align: left;
+}
+
+@media (min-width: 760px) {
+    .logo {
+        font: var(--font-style-header3-tablet);
+    }
+
+    .language-selector {
+        font: var(--font-style-body-tablet);
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo {
+        font: var(--font-style-header3-desktop);
+    }
+
+    .language-selector {
+        font: var(--font-style-body-desktop);
+    }
+}

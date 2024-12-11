@@ -1,0 +1,338 @@
+@import url(/CSS/general.css);
+@import url(/CSS/menu.css);
+@import url(/CSS/reviews-form.css);
+
+/* --- Top Section --- */
+.stirbey-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.main-photo {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 60% 30%;
+    filter: brightness(65%);
+}
+
+.text-container {
+    position: absolute;
+    top: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.text-container h1{
+    position: absolute;
+    color: var(--color-warmBeige);
+}
+
+.top-divider {
+    margin-top: 30px;
+    position: absolute;
+    width: 363px;
+    height: 38px;
+}
+
+.text-container p {
+    color: var(--color-warmBeige);
+    margin: 70px 54px 0 54px;
+    max-width: 495px;
+}
+
+.down-arrow {
+    position: absolute;
+    bottom: 5%;
+}
+/* --- Top Section End --- */
+
+/* --- Visiting Hours Section --- */
+.stirbey-visiting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stirbey-visiting h1 {
+    margin-bottom: 20px;
+    color: var(--color-warmBeige);
+}
+
+.stirbey-visiting p {
+    text-align: center;
+    color: var(--color-warmBeige);
+}
+
+.hours-text {
+    font: var(--font-style-body-desktop);
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+/* --- Visiting Hours Section End --- */
+
+/* --- Already Visited Section --- */
+.already {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.already h1 {
+    color: var(--color-warmBeige);
+    margin-bottom: 10px;
+}
+
+.already button {
+    background-color: var(--color-gold);
+    color: var(--color-darkRed);
+    padding: 3px 24px;
+    font: var(--font-style-header3-mobile);
+    font-weight: 700;
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.25);
+    border: 0;
+    transition: background-color 0.3s ease;
+    width: 250px;
+}
+
+.already button:hover {
+    background-color: var(--color-warmBeige);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+/* --- Already Visited Section End --- */
+
+/* --- Reviews Section --- */
+.stirbey-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stirbey-reviews h1 {
+    margin-bottom: 20px;
+    color: var(--color-warmBeige);
+}
+
+.stirbey-reviews h1, p, h3{
+    color: var(--color-warmBeige);
+}
+
+.review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.review img {
+    width: 135px;
+    height: 191px;
+    object-fit: cover;
+    border: 2px solid var(--color-gold);
+}
+
+.review p {
+    margin-bottom: 10px;
+    width: 180px;
+}
+
+#reviews-container {
+    margin-bottom: 20px;
+}
+
+.stirbey-reviews button {
+    background-color: var(--color-gold);
+    color: var(--color-darkRed);
+    padding: 3px 24px;
+    font: var(--font-style-header3-mobile);
+    font-weight: 700;
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.25);
+    border: 0;
+    transition: background-color 0.3s ease;
+}
+
+.stirbey-reviews button:hover {
+    background-color: var(--color-warmBeige);
+}
+/* --- Reviews Section End --- */
+
+/* --- History Section --- */
+.stirbey-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 170px;
+    column-gap: 170px;
+}
+
+.stirbey-history h1 {
+    color: var(--color-warmBeige);
+    margin-bottom: 40px;
+}
+
+.stirbey-history h1.story-big {
+    color: var(--color-gold);
+    margin: 0;
+    line-height: 80%;
+}
+
+.stirbey-history h1.story-medium {
+    color: var(--color-gold);
+    margin: 0;
+    line-height: 80%;
+}
+
+.stirbey-history h1.story-small {
+    color: var(--color-gold);
+    margin: 0;
+    max-width: 389px;
+    line-height: 80%;
+}
+
+.story-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.story-section p {
+    background-color: rgb(0, 0, 0, 0.4);
+    padding: 20px 12px;
+    width: 248px;
+    position: absolute;
+    top: 50%;
+}
+
+@media (min-width: 760px) {
+     .text-container p {
+        margin-top: 80px;
+    }
+
+    .top-divider {
+        margin-top: 40px;
+    }
+
+    .stirbey-visiting h1 {
+        margin-bottom: 28px;
+    }
+
+    .stirbey-history h1 {
+        margin-bottom: 48px;
+    }
+
+    .already h1 {
+        margin-bottom: 25px;
+    }
+
+    .already button {
+        font: var(--font-style-header3-tablet);
+        font-weight: 700;
+        width: 335px;
+    }
+
+    .stirbey-reviews h1 {
+        margin-bottom: 25px;
+    }
+
+    .review p {
+        width: 300px;
+    }
+
+    .review img {
+        min-width: 393px;
+        min-height: 239px;
+    }
+
+    .story-section p {
+        width: 340px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .text-container p{
+        margin-top: 100px;
+    }
+
+    .top-divider {
+        margin: 60px 0;
+    }
+
+    .stirbey-visiting h1 {
+        margin-bottom: 70px;
+    }
+
+    .hours-text {
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+
+    .info-container {
+        flex-direction: row;
+        gap: 215px;
+    }
+
+    .already button {
+        font: var(--font-style-header3-desktop);
+        font-weight: 700;
+        width: 450px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        gap: 70px;
+    }
+
+    .stirbey-reviews h1 {
+        margin-bottom: 35px;
+    }
+
+    .review p {
+        width: 594px;
+    }
+
+    .stirbey-reviews button {
+        font: var(--font-style-header3-desktop);
+        font-weight: 700;
+    }
+
+    .stirbey-history h1 {
+        margin-bottom: 35px;
+    }
+
+    .story-section p {
+        width: 414px;
+    }
+
+    .stirbey-history h1.story-small {
+        max-width: 537px;
+    }
+}
