@@ -181,7 +181,7 @@ p {font: var(--font-style-body-mobile);}
     .footer-divider-big {
         display: block;
         margin-top: 120px;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
 
     .footer-section a {
