@@ -288,6 +288,10 @@
 
 .stirbey-transport h1 {
     color: var(--color-warmBeige);
+}
+
+.address-text {
+    color: var(--color-gold);
     margin-bottom: 20px;
 }
 
@@ -332,6 +336,86 @@
 
 .transport-underline {
     text-decoration: underline;
+}
+/* --- Transport Section End --- */
+
+/* --- Restaurants Section Start --- */
+.stirbey-eat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stirbey-eat h1 {
+    color: var(--color-warmBeige);
+    margin-bottom: 20px;
+}
+
+.restaurants-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.restaurant-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 110px;
+}
+
+.restaurant-card img {
+    width: 110px;
+    height: 180px;
+    object-fit: cover;
+    border: 2px solid var(--color-gold);
+}
+
+.restaurant-card h3 {
+    text-align: center;
+}
+
+.restaurant-card p {
+    font-weight: 700;
+}
+
+.restaurant-card button {
+    background-color: var(--color-gold);
+    color: var(--color-darkRed);
+    padding: 3px 24px;
+    font: var(--font-style-header3-mobile);
+    font-weight: 700;
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.25);
+    border: 0;
+    transition: background-color 0.3s ease;
+}
+
+.restaurant-card button:hover {
+    background-color: var(--color-warmBeige);
+}
+/* --- Restaurants Section End --- */
+
+/* --- Contact Section --- */
+.stirbey-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stirbey-contact h1 {
+    color: var(--color-warmBeige);
+    margin-bottom: 20px;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 @media (min-width: 760px) {
@@ -399,10 +483,34 @@
         height: 320px;
     }
 
-    .stirbey-transport h1 {
+    .address-text {
         margin-bottom: 30px;
     }
     
+    .stirbey-eat h1 {
+        margin-bottom: 25px;
+    }
+
+    .restaurants-container {
+        padding: 20px;
+    }
+
+    .restaurant-card {
+        width: 230px;
+    }
+
+    .restaurant-card img {
+        width: 230px;
+        height: 320px;
+    }
+
+    .stirbey-contact h1 {
+        margin-bottom: 25px;
+    }
+
+    .contact-text {
+        margin-bottom: 20px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -486,7 +594,7 @@
         height: 549px;
     }
 
-    .stirbey-transport h1 {
+    .address-text {
         margin-bottom: 35px;
     }
 
@@ -496,5 +604,31 @@
 
     .transport-small {
         display: none;
+    }
+
+    .stirbey-eat h1 {
+        margin-bottom: 35px;
+    }
+
+    .restaurants-container {
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .restaurant-card {
+        width: 393px;
+    }
+
+    .restaurant-card img {
+        width: 393px;
+        height: 549px;
+    }
+
+    .stirbey-contact h1 {
+        margin-bottom: 35px;
+    }
+
+    .contact-text {
+        margin-bottom: 50px;
     }
 }
