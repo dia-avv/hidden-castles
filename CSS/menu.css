@@ -6,7 +6,7 @@
     align-items: center;
     background: none;
     padding: 30px 25px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

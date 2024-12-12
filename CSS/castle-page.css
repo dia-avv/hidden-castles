@@ -3,7 +3,7 @@
 @import url(/CSS/reviews-form.css);
 
 /* --- Top Section --- */
-.stirbey-top {
+.top {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,18 +57,18 @@
 /* --- Top Section End --- */
 
 /* --- Visiting Hours Section --- */
-.stirbey-visiting {
+.visiting {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.stirbey-visiting h1 {
+.visiting h1 {
     margin-bottom: 20px;
     color: var(--color-warmBeige);
 }
 
-.stirbey-visiting p {
+.visiting p {
     text-align: center;
     color: var(--color-warmBeige);
 }
@@ -121,18 +121,18 @@
 /* --- Already Visited Section End --- */
 
 /* --- Reviews Section --- */
-.stirbey-reviews {
+.reviews {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.stirbey-reviews h1 {
+.reviews h1 {
     margin-bottom: 20px;
     color: var(--color-warmBeige);
 }
 
-.stirbey-reviews h1, p, h3{
+.reviews h1, p, h3{
     color: var(--color-warmBeige);
 }
 
@@ -161,7 +161,7 @@
     margin-bottom: 20px;
 }
 
-.stirbey-reviews button {
+.reviews button {
     background-color: var(--color-gold);
     color: var(--color-darkRed);
     padding: 3px 24px;
@@ -172,13 +172,13 @@
     transition: background-color 0.3s ease;
 }
 
-.stirbey-reviews button:hover {
+.reviews button:hover {
     background-color: var(--color-warmBeige);
 }
 /* --- Reviews Section End --- */
 
 /* --- History Section --- */
-.stirbey-history {
+.history {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,24 +193,25 @@
     column-gap: 170px;
 }
 
-.stirbey-history h1 {
+.history h1 {
     color: var(--color-warmBeige);
     margin-bottom: 40px;
+    text-align: center;
 }
 
-.stirbey-history h1.story-big {
+.history h1.story-big {
     color: var(--color-gold);
     margin: 0;
     line-height: 80%;
 }
 
-.stirbey-history h1.story-medium {
+.history h1.story-medium {
     color: var(--color-gold);
     margin: 0;
     line-height: 80%;
 }
 
-.stirbey-history h1.story-small {
+.history h1.story-small {
     color: var(--color-gold);
     margin: 0;
     max-width: 389px;
@@ -235,15 +236,16 @@
 /* --- History Section End --- */
 
 /* --- Tenants Section --- */
-.stirbey-tenants {
+.tenants {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.stirbey-tenants h1 {
+.tenants h1 {
     color: var(--color-warmBeige);
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .tenants-container {
@@ -280,19 +282,21 @@
 /* --- Tenants Section End --- */
 
 /* --- Transport Section --- */
-.stirbey-transport {
+.transport {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.stirbey-transport h1 {
+.transport h1 {
     color: var(--color-warmBeige);
+    text-align: center;
 }
 
 .address-text {
     color: var(--color-gold);
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .transport-container {
@@ -340,15 +344,16 @@
 /* --- Transport Section End --- */
 
 /* --- Restaurants Section Start --- */
-.stirbey-eat {
+.eat {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.stirbey-eat h1 {
+.eat h1 {
     color: var(--color-warmBeige);
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .restaurants-container {
@@ -383,10 +388,11 @@
     font-weight: 700;
 }
 
-.restaurant-card button {
+.restaurant-card a {
+    text-decoration: none;
     background-color: var(--color-gold);
     color: var(--color-darkRed);
-    padding: 3px 24px;
+    padding: 3px 10px;
     font: var(--font-style-header3-mobile);
     font-weight: 700;
     box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.25);
@@ -400,13 +406,13 @@
 /* --- Restaurants Section End --- */
 
 /* --- Contact Section --- */
-.stirbey-contact {
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.stirbey-contact h1 {
+.contact h1 {
     color: var(--color-warmBeige);
     margin-bottom: 20px;
 }
@@ -418,6 +424,10 @@
     margin-bottom: 15px;
 }
 
+.map-text {
+    text-align: center;
+}
+
 @media (min-width: 760px) {
      .text-container p {
         margin-top: 80px;
@@ -427,11 +437,11 @@
         margin-top: 40px;
     }
 
-    .stirbey-visiting h1 {
+    .visiting h1 {
         margin-bottom: 28px;
     }
 
-    .stirbey-history h1 {
+    .history h1 {
         margin-bottom: 48px;
     }
 
@@ -445,7 +455,7 @@
         width: 335px;
     }
 
-    .stirbey-reviews h1 {
+    .reviews h1 {
         margin-bottom: 25px;
     }
 
@@ -458,7 +468,7 @@
         min-height: 239px;
     }
 
-    .stirbey-history {
+    .history {
         margin-bottom: 130px;
     }
 
@@ -466,7 +476,7 @@
         width: 340px;
     }
 
-    .stirbey-tenants h1 {
+    .tenants h1 {
         margin-bottom: 25px;
     }
 
@@ -487,7 +497,7 @@
         margin-bottom: 30px;
     }
     
-    .stirbey-eat h1 {
+    .eat h1 {
         margin-bottom: 25px;
     }
 
@@ -504,7 +514,7 @@
         height: 320px;
     }
 
-    .stirbey-contact h1 {
+    .contact h1 {
         margin-bottom: 25px;
     }
 
@@ -522,7 +532,7 @@
         margin: 60px 0;
     }
 
-    .stirbey-visiting h1 {
+    .visiting h1 {
         margin-bottom: 70px;
     }
 
@@ -547,7 +557,7 @@
         gap: 70px;
     }
 
-    .stirbey-reviews h1 {
+    .reviews h1 {
         margin-bottom: 35px;
     }
 
@@ -555,16 +565,16 @@
         width: 594px;
     }
 
-    .stirbey-reviews button {
+    .reviews button {
         font: var(--font-style-header3-desktop);
         font-weight: 700;
     }
 
-    .stirbey-history {
+    .history {
         margin-bottom: 120px;
     }
 
-    .stirbey-history h1 {
+    .history h1 {
         margin-bottom: 35px;
     }
 
@@ -572,11 +582,11 @@
         width: 414px;
     }
 
-    .stirbey-history h1.story-small {
+    .history h1.story-small {
         max-width: 537px;
     }
 
-    .stirbey-tenants h1 {
+    .tenants h1 {
         margin-bottom: 35px;
     }
 
@@ -598,6 +608,10 @@
         margin-bottom: 35px;
     }
 
+    .transport-container {
+        gap: 120px;
+    }
+
     .transport-big {
         display: block;
     }
@@ -606,7 +620,7 @@
         display: none;
     }
 
-    .stirbey-eat h1 {
+    .eat h1 {
         margin-bottom: 35px;
     }
 
@@ -624,7 +638,7 @@
         height: 549px;
     }
 
-    .stirbey-contact h1 {
+    .contact h1 {
         margin-bottom: 35px;
     }
 

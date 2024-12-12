@@ -55,6 +55,7 @@
 }
 
 .read-more {
+    text-decoration: none;
     background-color: var(--color-gold);
     color: var(--color-darkRed);
     padding: 3px 24px;
