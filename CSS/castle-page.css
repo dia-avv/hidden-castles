@@ -524,6 +524,21 @@
 }
 
 @media (min-width: 1024px) {
+
+    .tenants-container {
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .tenant-card {
+        width: 393px;
+    }
+
+    .tenant-card img {
+        width: 393px;
+        height: 549px;
+    }
+
     .text-container p{
         margin-top: 100px;
     }
@@ -588,20 +603,6 @@
 
     .tenants h1 {
         margin-bottom: 35px;
-    }
-
-    .tenants-container {
-        gap: 20px;
-        padding: 30px;
-    }
-
-    .tenant-card {
-        width: 393px;
-    }
-
-    .tenant-card img {
-        width: 393px;
-        height: 549px;
     }
 
     .address-text {
