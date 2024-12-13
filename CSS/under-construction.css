@@ -1,0 +1,25 @@
+@import url(/CSS/general.css);
+@import url(/CSS/menu.css);
+
+.under-construction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.under-construction h1, p{
+    color: var(--color-warmBeige);
+}
+
+@media (min-width: 760px) {
+    .under-construction {
+        margin-top: 55px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .under-construction {
+        margin-top: 100px;
+    }
+}

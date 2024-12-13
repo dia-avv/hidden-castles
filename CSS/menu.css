@@ -60,14 +60,14 @@
     flex-direction: column;
     list-style: none;
     width: 50vw;
-    height: 100vh;
-    -webkit-overflow-scrolling: touch;
+    max-height: calc(100vh - 100px); /* makes it scroll until the bottom */
     top: 100px;
     right: 0;
     padding: 0 30px;
     background-color: var(--color-warmBeige);
     z-index: 1;
     overflow-y: scroll;
+     -webkit-overflow-scrolling: touch;
 }
 
 .navigation ul li a.active-link {

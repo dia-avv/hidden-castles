@@ -1,16 +1,16 @@
-// Function to fetch and display reviews
+// function to fetch and display reviews
 let reviews = [];
 
 function fetchReviews() {
     const storedReviews = JSON.parse(localStorage.getItem('reviews'));
     if (storedReviews) {
-        reviews = storedReviews; // Load from localStorage if available
+        reviews = storedReviews; // load from localStorage if available
     } else {
-        fetch('../JSON/reviews.json')  // Fetch from the JSON file if no reviews are in localStorage
-            .then(response => response.json())  // Parse the JSON response
+        fetch('../JSON/reviews.json')  // fetch from the JSON file if no reviews are in localStorage
+            .then(response => response.json())
             .then(fetchedReviews => {
                 reviews = fetchedReviews;  // Load fetched reviews
-                localStorage.setItem('reviews', JSON.stringify(reviews));  // Save to localStorage
+                localStorage.setItem('reviews', JSON.stringify(reviews));  // save to localStorage
             })
             .catch(error => console.error('Error loading reviews:', error));
     }
@@ -20,13 +20,9 @@ function fetchReviews() {
 function displayReviews(){
     // Sort reviews by date in descending order
     reviews.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-            // Limit to the top 3 most recent reviews
             const limitedReviews = reviews.slice(0, 3);
-
-            // Display the reviews in the DOM
             const reviewsContainer = document.getElementById('reviews-container');
-            reviewsContainer.innerHTML = '';  // Clear the current list
+            reviewsContainer.innerHTML = '';
 
             limitedReviews.forEach(review => {
                 const reviewElement = document.createElement('div');
