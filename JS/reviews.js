@@ -6,7 +6,7 @@ function fetchReviews() {
     if (storedReviews) {
         reviews = storedReviews; // load from localStorage if available
     } else {
-        fetch('../JSON/reviews.json')  // fetch from the JSON file if no reviews are in localStorage
+        fetch('JSON/reviews.json')  // fetch from the JSON file if no reviews are in localStorage
             .then(response => response.json())
             .then(fetchedReviews => {
                 reviews = fetchedReviews;  // Load fetched reviews
