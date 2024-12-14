@@ -1,18 +1,18 @@
 [
     {
-        "photo": "PHOTOS/luminis6.jpg",
+        "photo": "../PHOTOS/luminis6.jpg",
         "text": "Vila Luminis offers a cozy museum with a focus on local history. The exhibits are well-curated and provide an intimate experience. It's a peaceful stop for those interested in the region's past.",
         "name": "Elena Ionescu",
         "date": "2024-08-23"
     },
     {
-        "photo": "PHOTOS/foisor5.jpg",
+        "photo": "../PHOTOS/foisor5.jpg",
         "text": "It’s a bit disappointing that you can’t go inside, but the castle’s exterior more than makes up for it. The design is beautiful, and the area around it is lovely to explore. A quick stop if you're nearby.",
         "name": "Mihai Vasile",
         "date": "2023-12-13"
     },
     {
-        "photo": "PHOTOS/stirbey5.jpeg",
+        "photo": "../PHOTOS/stirbey5.jpeg",
         "text": "The museum at Castelul Stirbey offers a rich historical experience, showcasing artifacts from the castle’s past. The displays are well-organized making it a worthwhile visit.",
         "name": "Ioana Urs",
         "date": "2024-10-28"
