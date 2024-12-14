@@ -29,7 +29,7 @@
 
 .text-container {
     position: absolute;
-    top: 55%;
+    top: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -255,7 +255,7 @@
     }
     
     .text-container {
-        top: 40%;
+        top: 20%;
     }
 
     .text-container p {
@@ -305,7 +305,7 @@
     }
 
     .text-container {
-        top: 45%;
+        top: 25%;
     }
 
     .text-container p{
