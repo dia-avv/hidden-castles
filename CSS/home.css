@@ -75,12 +75,14 @@
     position: absolute;
     left: 10px;
     background: none;
+    border: none;
 }
   
 #next1, #next2, #next3 {
     position: absolute;
     right: 10px;
     background: none;
+    border: none;
 }
 
 .buttons-container {
